@@ -6,7 +6,8 @@ namespace VarIf
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            
             //Zadanie 1
             //int a = 5;
             //int b = 5;
@@ -241,6 +242,27 @@ namespace VarIf
                     break;
             }
             //Zadanie 13
+            Console.WriteLine("Podaj pierwszą liczbę do obliczeń:");
+            double firstNumberCount = double.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj druga liczbę di obliczeń:");
+            double secondNumberCount = double.Parse(Console.ReadLine());
+            Console.WriteLine("Wybierz opcję obliczeń: \r\n 1. Dodawanie \r\n 2. Odejmowanie \r\n 3. Mnożenie \r\n 4. Dzielenie");
+            int option = int.Parse(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    Console.WriteLine("Wynik dodawania = " + (firstNumberCount + secondNumberCount));
+                    break;
+                case 2:
+                    Console.WriteLine("Wynik odejmowania = " + (firstNumberCount - secondNumberCount));
+                    break;
+                case 3:
+                    Console.WriteLine("Wynik mnożenia = " + (firstNumberCount * secondNumberCount));
+                    break;
+                case 4:
+                    Console.WriteLine("Wynik dzielenia = " + (firstNumberCount / secondNumberCount));
+                    break;
+            }
         }
 
     }
