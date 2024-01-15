@@ -20,7 +20,9 @@ namespace VarIf
             {
                 Console.WriteLine(a + ", " + b + " są równe");
             }
-            else { Console.WriteLine(a + ", " + b + " nie są równe"); }
+            else {
+                Console.WriteLine(a + ", " + b + " nie są równe"); 
+            }
             //Zadanie 2
             Console.WriteLine("Wpisz liczbę do sprawdzenie czy jest parzysta lub nieparzysta");
             int c = int.Parse(Console.ReadLine());
@@ -150,19 +152,19 @@ namespace VarIf
             {
                 Console.WriteLine("Cholernie piździ");
             }
-            else if ((temp >= 0) && (temp < 10))
+            else if (temp >= 0 && temp < 10)
             {
                 Console.WriteLine("Zimno");
             }
-            else if ((temp >= 10) && (temp <20))
+            else if (temp >= 10 && temp <20)
             {
                 Console.WriteLine("Chłodno");
             }
-            else if ((temp >= 20) && (temp < 30))
+            else if (temp >= 20 && temp < 30)
             {
                 Console.WriteLine("W sam raz");
             }
-            else if ((temp >= 30) && (temp < 40))
+            else if (temp >= 30 && temp < 40)
             {
                 Console.WriteLine("Zaczyna być słabo, bo gorąco");
             }
@@ -242,25 +244,25 @@ namespace VarIf
                     break;
             }
             //Zadanie 13
-            Console.WriteLine("Podaj pierwszą liczbę do obliczeń:");
+            Console.WriteLine("Podaj pierwszą liczbę :");
             double firstNumberCount = double.Parse(Console.ReadLine());
-            Console.WriteLine("Podaj druga liczbę di obliczeń:");
+            Console.WriteLine("Podaj druga liczbę :");
             double secondNumberCount = double.Parse(Console.ReadLine());
-            Console.WriteLine("Wybierz opcję obliczeń: \r\n 1. Dodawanie \r\n 2. Odejmowanie \r\n 3. Mnożenie \r\n 4. Dzielenie");
+            Console.WriteLine("Podaj numer operacji do wykonania : \r\n 1. Dodawanie \r\n 2. Odejmowanie \r\n 3. Mnożenie \r\n 4. Dzielenie");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    Console.WriteLine("Wynik dodawania = " + (firstNumberCount + secondNumberCount));
+                    Console.WriteLine("Twój wynik to: " + (firstNumberCount + secondNumberCount));
                     break;
                 case 2:
-                    Console.WriteLine("Wynik odejmowania = " + (firstNumberCount - secondNumberCount));
+                    Console.WriteLine("Twój wynik to: " + (firstNumberCount - secondNumberCount));
                     break;
                 case 3:
-                    Console.WriteLine("Wynik mnożenia = " + (firstNumberCount * secondNumberCount));
+                    Console.WriteLine("Twój wynik to: " + (firstNumberCount * secondNumberCount));
                     break;
                 case 4:
-                    Console.WriteLine("Wynik dzielenia = " + (firstNumberCount / secondNumberCount));
+                    Console.WriteLine("Twój wynik to: " + (firstNumberCount / secondNumberCount));
                     break;
             }
         }
